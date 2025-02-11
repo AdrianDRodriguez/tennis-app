@@ -1,5 +1,6 @@
 class RacketsController < ApplicationController
   def index
-    render json: { message: "tennis" }
+    @rackets = Racket.all
+    render :index
   end
 end
