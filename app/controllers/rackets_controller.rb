@@ -13,7 +13,4 @@ class RacketsController < ApplicationController
     )
     render :show
   end
-  def update
-    @racket = Racket.find_by(id:)
-  end
 end
